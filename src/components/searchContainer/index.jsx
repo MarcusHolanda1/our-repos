@@ -4,7 +4,7 @@ const SearchContainer = () => (
     <>
         <SearchTitle>OurRepositories</SearchTitle>
         <SearchInputContainer>
-        <SearchInput></SearchInput>
+        <SearchInput placeholder="Username"></SearchInput>
         <SearchButton>SEARCH</SearchButton>
         </SearchInputContainer>
     </>

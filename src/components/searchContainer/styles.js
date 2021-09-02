@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const SearchTitle = styled.h1`
     font-family: Arial, sans-serif;
@@ -7,44 +7,52 @@ export const SearchTitle = styled.h1`
     position: relative;
     bottom: 200px;
 
-    background: -webkit-linear-gradient(#CF5AF8, #6129FF);
+    background: -webkit-linear-gradient(#cf5af8, #6129ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-`
+`;
 
 export const SearchInputContainer = styled.div`
     padding: 10px 16px;
     height: 200px;
     display: flex;
-    background-color: black;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-`
+`;
 
 export const SearchInput = styled.input`
     width: 145px;
     height: 35px;
     left: 648px;
-    background: #FFFFFF;
-    border: 1px solid #9E00FF;
+    background: #ffffff;
+    border: 1px solid #9e00ff;
     box-sizing: border-box;
     border-radius: 5px;
     transform: rotate(0deg);
-`
+
+    ::-webkit-input-placeholder {
+        text-align: center;
+        color: #9d9797;
+    }
+`;
 
 export const SearchButton = styled.button`
     margin: 25px 0 0;
     width: 145px;
     height: 35px;
-    background: #9E00FF;
+    background: #9e00ff;
     border-radius: 5px;
     cursor: pointer;
-    
+
     color: white;
     font-size: 16px;
     font-weight: 540;
-`
+
+    &:hover{
+    background: #682FF5;
+  }
+`;
 
 // import styled from 'styled-components';
 
