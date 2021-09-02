@@ -5,7 +5,7 @@ export const SearchTitle = styled.h1`
     font-size: 36px;
     font-weight: normal;
     position: relative;
-    bottom: 200px;
+    bottom: 100px;
 
     background: -webkit-linear-gradient(#cf5af8, #6129ff);
     -webkit-background-clip: text;
@@ -22,7 +22,7 @@ export const SearchInputContainer = styled.div`
 `;
 
 export const SearchLogo = styled.img`
-    
+
 `
 
 export const SearchInput = styled.input`

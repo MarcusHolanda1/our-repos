@@ -6,6 +6,7 @@ export default function Home() {
     return (
         <Container>
              <SearchTitle />
+             
             {/* <UserContainer>
                 
             </UserContainer> */} 
