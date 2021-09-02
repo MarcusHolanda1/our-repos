@@ -1,8 +1,15 @@
-import { SearchTitle, SearchInputContainer, SearchInput, SearchButton } from "./styles";
+import {
+    SearchTitle, 
+    SearchInputContainer,
+    SearchInput, 
+    SearchButton,
+    SearchLogo 
+} from "./styles";
 
 const SearchContainer = () => (
     <>
         <SearchTitle>OurRepositories</SearchTitle>
+        <SearchLogo src={"./assets/images/SearchLogo.svg"}></SearchLogo>
         <SearchInputContainer>
         <SearchInput placeholder="Username"></SearchInput>
         <SearchButton>SEARCH</SearchButton>

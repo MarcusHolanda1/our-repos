@@ -21,6 +21,10 @@ export const SearchInputContainer = styled.div`
     flex-direction: column;
 `;
 
+export const SearchLogo = styled.img`
+    
+`
+
 export const SearchInput = styled.input`
     width: 145px;
     height: 35px;
@@ -32,6 +36,8 @@ export const SearchInput = styled.input`
     transform: rotate(0deg);
 
     ::-webkit-input-placeholder {
+        align-items: center;
+        font-size: 16px;
         text-align: center;
         color: #9d9797;
     }
