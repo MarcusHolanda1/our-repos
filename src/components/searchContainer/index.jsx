@@ -3,7 +3,8 @@ import {
     SearchInputContainer,
     SearchInput,
     SearchButton,
-    SearchLogo
+    SearchLogo,
+    TitleInput
 } from "./styles";
 
 import seilaImg from '../../assets/images/SearchLogo.svg'
@@ -11,8 +12,9 @@ import seilaImg from '../../assets/images/SearchLogo.svg'
 const SearchContainer = () => (
     <>
         <SearchTitle>OurRepositories</SearchTitle>
-        <SearchLogo src={seilaImg} alt={'letsgo'}></SearchLogo>
+        <SearchLogo src={seilaImg} alt='letsgo'></SearchLogo>
         <SearchInputContainer>
+            <TitleInput>GitHub Profile</TitleInput>
             <SearchInput placeholder="Username"></SearchInput>
             <SearchButton>SEARCH</SearchButton>
         </SearchInputContainer>

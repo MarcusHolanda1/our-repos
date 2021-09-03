@@ -5,11 +5,9 @@ export const SearchTitle = styled.h1`
     font-size: 36px;
     font-weight: normal;
     position: relative;
-    bottom: 100px;
+    bottom: 40px;
 
-    background: -webkit-linear-gradient(#cf5af8, #6129ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #D0D0D0;
 `;
 
 export const SearchInputContainer = styled.div`
@@ -22,24 +20,42 @@ export const SearchInputContainer = styled.div`
 `;
 
 export const SearchLogo = styled.img`
+    width: 164px;
+    height: 171px;
 
+`
+
+export const TitleInput = styled.h2`
+    text-align: center;
+    
+    
+    color: #B6B6B6;
+    font-family: Arial, sans-serif;
+    width: 124px;
+    height: 23px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+;
 `
 
 export const SearchInput = styled.input`
     width: 145px;
     height: 35px;
     left: 648px;
-    background: #ffffff;
-    border: 1px solid #9e00ff;
+    background: #14022C;
+    border: 1.2px solid #6F6F6F;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 8px;
     transform: rotate(0deg);
+    font-size: .875rem;
 
     ::-webkit-input-placeholder {
         align-items: center;
         font-size: 16px;
         text-align: center;
-        color: #9d9797;
     }
 `;
 
@@ -48,12 +64,13 @@ export const SearchButton = styled.button`
     width: 145px;
     height: 35px;
     background: #9e00ff;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 
     color: white;
     font-size: 16px;
-    font-weight: 540;
+    font-weight: 500;
+    line-height: 19px;
 
     &:hover{
     background: #682FF5;
