@@ -12,12 +12,32 @@ export const Container = styled.main`
 `
 
 export const Card = styled.div`
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: .0625rem solid rgba(34,42,66,.05);
-    border-radius: .2857rem;
+    background-color: #14022C;
+    width: 380px;
+    height: 430px;
+
+    border: 1.5px solid #7F83F3;
+    border-radius: 8px;
+`
+
+
+export const Name = styled.h1`
+    font-family: Arial,sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+
+    text-align: center;
+    padding-top: 100px;
+`
+
+export const UserName = styled.h4`
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #807878;
+    padding-top: 10px;
+
+    text-align: center;
+;
 `

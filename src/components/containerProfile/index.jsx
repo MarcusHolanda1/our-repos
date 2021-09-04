@@ -1,8 +1,11 @@
-import { Container } from './styles';
+import { Container, Card, Name, UserName } from "./styles";
 
-const ProfileContainer = props => (
+const ProfileContainer = (props) => (
     <Container>
-        {props.children}
+        <Card>
+            <Name>Marcus Holanda</Name>
+            <UserName>#MarcusHolanda1</UserName>
+        </Card>
     </Container>
 );
 
