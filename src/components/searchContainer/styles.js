@@ -26,18 +26,12 @@ export const SearchLogo = styled.img`
 `
 
 export const TitleInput = styled.h2`
-    text-align: center;
-    
-    
-    color: #B6B6B6;
-    font-family: Arial, sans-serif;
-    width: 124px;
-    height: 23px;
+    font-family: Arial,sans-serif;
+    font-size: 20px;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    color: #B6B6B6;
     margin-bottom: 20px;
-    
 ;
 `
 
@@ -51,6 +45,12 @@ export const SearchInput = styled.input`
     border-radius: 8px;
     transform: rotate(0deg);
     font-size: .875rem;
+    color: white;
+    text-align: center;
+
+    &:hover{
+        border-color: #BE5FF6;
+    }
 
     ::-webkit-input-placeholder {
         align-items: center;
