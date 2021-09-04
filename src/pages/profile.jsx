@@ -1,10 +1,11 @@
-import MainContainer from "../components/container";
 
+
+import ProfileContainer from "../components/containerProfile";
 
 export default function Profile() {
     return (
-        <MainContainer>
+        <ProfileContainer>
 
-        </MainContainer>
+        </ProfileContainer>
     );
 }
