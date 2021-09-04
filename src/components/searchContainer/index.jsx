@@ -7,12 +7,12 @@ import {
     TitleInput
 } from "./styles";
 
-import seilaImg from '../../assets/images/SearchLogo.svg'
+import searchImg from '../../assets/images/SearchLogo.svg'
 
 const SearchContainer = () => (
     <>
         <SearchTitle>OurRepositories</SearchTitle>
-        <SearchLogo src={seilaImg} alt='letsgo'></SearchLogo>
+        <SearchLogo src={searchImg} alt='letsgo'></SearchLogo>
         <SearchInputContainer>
             <TitleInput>GitHub Profile</TitleInput>
             <SearchInput placeholder="Username"></SearchInput>

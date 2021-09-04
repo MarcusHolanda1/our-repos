@@ -1,15 +1,14 @@
-import Container from '../components/container';
-import SearchTitle from '../components/searchContainer';
+import SearchContainer from "../components/searchContainer";
+
+import MainContainer from "../components/container";
 // import UserContainer from '../components/userContainer';
 
 export default function Home() {
     return (
-        <Container>
-             <SearchTitle />
-             
-            {/* <UserContainer>
-                
-            </UserContainer> */} 
-        </Container>
+        <MainContainer>
+            <SearchContainer>
+
+            </SearchContainer>
+        </MainContainer>
     );
 }
