@@ -3,6 +3,8 @@ import CardProfile from "../components/cardProfile";
 import UserPicture from "../components/pictureProfile";
 // import ProfileDetails from "../components/detailsProfile"
 
+import ProfileContainer from "../components/containerProfile";
+
 export default function Profile() {
     return (
         <MainContainer>
@@ -12,3 +14,4 @@ export default function Profile() {
         </MainContainer>
     );
 }
+
