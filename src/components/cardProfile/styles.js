@@ -13,7 +13,6 @@ export const ProfileName = styled.h1`
     font-weight: 500;
     color: white;
     text-align: center;
-    padding-top: 100px;
 `
 
 export const UserName = styled.h4`
