@@ -54,7 +54,7 @@ const SearchContainer = (props) => {
                     onChange={(e) => setSearchedValue(e.target.value)}
                     placeholder="Username"
                 ></SearchInput>
-                <SearchButton onClick={valuesProfile}>search</SearchButton>
+                <SearchButton onClick={valuesProfile}>SEARCH</SearchButton>
                 {/* <SearchButton onClick={() => handleOnclick('/profile')}>SEARCH</SearchButton> */}
                 {/* <SearchButton onClick={getUserData}>SEARCH</SearchButton> */}
                 {/* <SearchButton onClick={function() {handleOnclick(() => handleOnclick('/profile')); getUserData(getUserData); }}></SearchButton> */}
