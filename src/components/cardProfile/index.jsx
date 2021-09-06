@@ -1,12 +1,15 @@
-import { Card, ProfileName, UserName, UserBio } from "./styles";
+import { Container, ProfileName, UserName, UserBio } from "./styles";
 
 const CardProfile = (props) => {
     return (
-        <Card>{props.children}
-             <ProfileName>Marcus Holanda</ProfileName>
+        <Container>
+            <ProfileName>Marcus Holanda</ProfileName>
             <UserName>#MarcusHolanda1</UserName>
-            <UserBio>Minha bio está aqui, sou responsável e curto codar, kk esquece fio</UserBio>
-        </Card>
+            <UserBio>
+                Minha bio está aqui, sou responsável e curto codar, kk esquece
+                fio
+            </UserBio>
+        </Container>
     );
 };
 

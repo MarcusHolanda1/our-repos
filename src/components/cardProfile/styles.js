@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const Card = styled.section`
-    background-color: #14022c;
-    width: 380px;
-    height: 430px;
-    border: 1.5px solid #7f83f3;
-    border-radius: 8px;
+
+export const Container = styled.div`
+    align-items: center;
+    position: relative;
+    top: 90px;
 `
+
 export const ProfileName = styled.h1`
     font-family: Arial,sans-serif;
     font-size: 20px;
