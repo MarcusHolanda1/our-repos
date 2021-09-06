@@ -1,4 +1,6 @@
-import { useHistory } from "react-router-dom";
+import React, { useState } from 'react';
+
+// import { useHistory } from "react-router-dom";
 
 import {
     SearchTitle,
@@ -9,11 +11,24 @@ import {
     TitleInput,
 } from "./styles";
 
+import client from '../../services/client'
+
 import searchImg from "../../assets/images/SearchLogo.svg";
 
 const SearchContainer = (props) => {
-    const history = useHistory();
-    const handleOnclick = (route) => history.push(route);
+    // const history = useHistory();
+    // const handleOnclick = (route) => history.push(route);
+
+    const [searchedValue, setSearchedValue] = useState('');
+
+    async function getUserData() {
+        try {
+            const response = await client.get(`/${searchedValue}`)
+            console.log(response.data);
+        } catch (err) {
+            console.log(err);
+        }
+    }
 
     return (
         <>
@@ -21,8 +36,9 @@ const SearchContainer = (props) => {
             <SearchLogo src={searchImg} alt="letsgo"></SearchLogo>
             <SearchInputContainer>
                 <TitleInput>GitHub Profile</TitleInput>
-                <SearchInput placeholder="Username"></SearchInput>
-                <SearchButton onClick={() => handleOnclick('/profile')}>SEARCH</SearchButton>
+                <SearchInput value={searchedValue} onChange={e => setSearchedValue(e.target.value)} placeholder="Username"></SearchInput>
+                {/* <SearchButton onClick={() => handleOnclick('/profile')}>SEARCH</SearchButton> */}
+                <SearchButton onClick={getUserData}>SEARCH</SearchButton>
             </SearchInputContainer>
         </>
     );
