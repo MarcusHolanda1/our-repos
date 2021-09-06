@@ -10,15 +10,17 @@ export const Section = styled.section`
 
 export const Title = styled.h1`
     font-size: 20px;
-    font-weight: 700;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
     margin-top: 10px;
-    color: #444;
+    color: white;
     width: 100%;
     text-align: center;
     height: 30px;
 `
 
 export const ListOfReposContainer = styled.h1`
+    font-family: Arial, sans-serif;
     height: 350px;
     width: 100%;
     padding: 10px;
@@ -28,16 +30,17 @@ export const ListOfReposContainer = styled.h1`
 export const Repo = styled.h1`
     width: 100%;
     height: 80px;
-    background-color: black;
-    border-radius: 5px;
+    background-color: #14022C;
+    border-bottom: .1rem solid #A4ADFA;
     padding: 10px;
     margin-bottom: 10px;
     
     h2 {
+        font-family: Arial, sans-serif;
         font-size: 15px;
         width: 100%;
         overflow: hidden;
-        color: #444;
+        color: #989090;
     }
     
     p {
