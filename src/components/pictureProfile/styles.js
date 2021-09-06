@@ -11,8 +11,9 @@ export const Container = styled.div`
 
 export const ProfilePicture = styled.img`
     position: relative;
-    bottom: 120px;
+    bottom: 105px;
     width: 130px;
     height: 130px;
     border-radius: 50%;
+    border: 1.5px solid #7f83f3;
 `

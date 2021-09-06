@@ -18,7 +18,7 @@ import searchImg from "../../assets/images/SearchLogo.svg";
 
 const SearchContainer = (props) => {
 
-        const pegandoTudo = () => {
+        const valuesProfile = () => {
             redirect()
             getUserData()
         }
@@ -54,7 +54,7 @@ const SearchContainer = (props) => {
                     onChange={(e) => setSearchedValue(e.target.value)}
                     placeholder="Username"
                 ></SearchInput>
-                <SearchButton onClick={pegandoTudo}>search</SearchButton>
+                <SearchButton onClick={valuesProfile}>search</SearchButton>
                 {/* <SearchButton onClick={() => handleOnclick('/profile')}>SEARCH</SearchButton> */}
                 {/* <SearchButton onClick={getUserData}>SEARCH</SearchButton> */}
                 {/* <SearchButton onClick={function() {handleOnclick(() => handleOnclick('/profile')); getUserData(getUserData); }}></SearchButton> */}

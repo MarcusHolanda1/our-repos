@@ -3,12 +3,9 @@ import { Container, ProfileName, UserName, UserBio } from "./styles";
 const CardProfile = (props) => {
     return (
         <Container>
-            <ProfileName>Marcus Holanda</ProfileName>
-            <UserName>#MarcusHolanda1</UserName>
-            <UserBio>
-                Minha bio está aqui, sou responsável e curto codar, kk esquece
-                fio
-            </UserBio>
+            <ProfileName>{props.name}</ProfileName>
+            <UserName>#{props.login}</UserName>
+            <UserBio>{props.bio}</UserBio>
         </Container>
     );
 };

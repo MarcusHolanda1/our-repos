@@ -31,4 +31,5 @@ export const UserBio = styled.p`
     padding-top: 37px;
     padding-left: 20px;
     padding-right: 5px;
+    text-align: center;
 `
