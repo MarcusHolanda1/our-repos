@@ -1,12 +1,18 @@
-import React from "react";
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 
 import { ProfileInputContainer, ProfileInput } from "./styles";
 
 const ButtonProfile = (props) => {
+    const history = useHistory()
+    const handleOnClick = route => history.push(route)
+    console.log(handleOnClick)
+
+    
     return (
         <ProfileInputContainer>
-            <ProfileInput>
+            <ProfileInput onClick={() => handleOnClick('/repos')}>
                 <h1>{props.repos}</h1>
                 <p>Repositórios</p>
             </ProfileInput>
