@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from "react";
 
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import {
     SearchTitle,
@@ -11,20 +11,33 @@ import {
     TitleInput,
 } from "./styles";
 
-import client from '../../services/client'
+import client from "../../services/client";
+import { context } from "../../context";
 
 import searchImg from "../../assets/images/SearchLogo.svg";
 
 const SearchContainer = (props) => {
-    // const history = useHistory();
+
+        const pegandoTudo = () => {
+            redirect()
+            getUserData()
+        }
+
+        
+      
+        const redirect = () => {
+          history.push('/profile')
+        }
+        let history = useHistory();
     // const handleOnclick = (route) => history.push(route);
 
+    const ctx = useContext(context);
     const [searchedValue, setSearchedValue] = useState('');
 
     async function getUserData() {
         try {
-            const response = await client.get(`/${searchedValue}`)
-            console.log(response.data);
+            const response = await client.get(`/${searchedValue}`);
+            ctx.setUserData(response.data);
         } catch (err) {
             console.log(err);
         }
@@ -36,35 +49,19 @@ const SearchContainer = (props) => {
             <SearchLogo src={searchImg} alt="letsgo"></SearchLogo>
             <SearchInputContainer>
                 <TitleInput>GitHub Profile</TitleInput>
-                <SearchInput value={searchedValue} onChange={e => setSearchedValue(e.target.value)} placeholder="Username"></SearchInput>
+                <SearchInput
+                    value={searchedValue}
+                    onChange={(e) => setSearchedValue(e.target.value)}
+                    placeholder="Username"
+                ></SearchInput>
+                <SearchButton onClick={pegandoTudo}>search</SearchButton>
                 {/* <SearchButton onClick={() => handleOnclick('/profile')}>SEARCH</SearchButton> */}
-                <SearchButton onClick={getUserData}>SEARCH</SearchButton>
+                {/* <SearchButton onClick={getUserData}>SEARCH</SearchButton> */}
+                {/* <SearchButton onClick={function() {handleOnclick(() => handleOnclick('/profile')); getUserData(getUserData); }}></SearchButton> */}
+                
             </SearchInputContainer>
         </>
     );
 };
 
 export default SearchContainer;
-
-// import {
-//     HeaderSection,
-//     HeaderTitle,
-//     HeaderInputContainer,
-//     HeaderInput,
-//     HeaderSearchButton
-// } from './styles';
-
-// const Header = () => (
-//     <HeaderSection>
-//         <HeaderTitle>Github Profile</HeaderTitle>
-//         <HeaderInputContainer>
-//             <HeaderInput />
-
-//             <HeaderSearchButton>
-//                 <FiSearch size={15} />
-//             </HeaderSearchButton>
-//         </HeaderInputContainer>
-//     </HeaderSection>
-// );
-
-// export default Header;
