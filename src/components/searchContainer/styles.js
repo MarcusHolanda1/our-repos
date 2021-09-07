@@ -73,7 +73,7 @@ export const SearchButton = styled.button`
     line-height: 19px;
 
     &:hover{
-    background: #682FF5;
+    background: #FA00FF;
   }
 `;
 

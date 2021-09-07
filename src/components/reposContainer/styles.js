@@ -25,13 +25,17 @@ export const ListOfReposContainer = styled.h1`
     width: 100%;
     padding: 10px;
     overflow-y: scroll;
+
+    ::-webkit-scrollbar {
+  width: 0px;
+}
 `
 
 export const Repo = styled.h1`
     width: 100%;
     height: 80px;
     background-color: #14022C;
-    border-bottom: .1rem solid #A4ADFA;
+    border-bottom: .1rem solid #1A1E40;
     padding: 10px;
     margin-bottom: 10px;
     

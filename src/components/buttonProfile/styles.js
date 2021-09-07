@@ -14,11 +14,20 @@ export const ProfileInputContainer = styled.div`
 export const ProfileInput = styled.div`
     width: 100px;
     height: 55px;
-    background: #14022C;
+
     border: 1.5px solid #CC00FF;
     box-sizing: border-box;
     border-radius: 200px;
     cursor: pointer;
+
+    background-color: transparent;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+
+    &:hover{
+        box-shadow: 0 0 10px 0 #7E0AFA inset, 0 0 20px 2px #7E0AFA;
+  border: 3px solid #7E0AFA;
+  }
 
     h1 {
         font-size: 20px;
